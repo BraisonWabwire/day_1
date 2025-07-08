@@ -10,6 +10,9 @@ This is a simple **Flutter Login UI** for a music-themed app called **Winx Playe
 ## 🖼️ Preview
 
 > This app is designed with a dark theme and a vibrant green accent for interactive elements like the login button.
+#Preview
+
+![Login Preview](assets/images/screenshot.png)
 
 ## 🛠️ Features
 
@@ -29,6 +32,5 @@ assets/
 └── images/
     └── home2.jpg     # Background image used in the login page
 
-#Preview
-![Login Preview](assets/images/screenshot.png)
+
 
