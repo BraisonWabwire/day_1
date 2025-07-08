@@ -30,5 +30,5 @@ assets/
     └── home2.jpg     # Background image used in the login page
 
 #Preview
-![Login Preview](assets/screenshot.png)
+![Login Preview](assets/images/screenshot.png)
 
