@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/images/home_image.jpg'),
+                    image: AssetImage('assets/images/home2.jpg'),
                     fit: BoxFit.cover,
                   ),
                   color: Color.fromRGBO(11, 11, 20, 0.843),
@@ -40,12 +40,40 @@ class MyApp extends StatelessWidget {
 
                 alignment: Alignment.topCenter,
                 padding: EdgeInsets.all(30),
-                child: const Text(
-                  "Hi, enjoy your favorite music",
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 5, 5, 5),
-                    fontSize: 15,
-                  ),
+                child: Column(
+                  children: [
+                    const Text(
+                      "Hi, login to enjoy your favorite music",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 21, 219, 44),
+                        fontSize: 20,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    // Text(
+                    //   "Enter email and password to continue",
+                    //   style: TextStyle(
+                    //     color: Color.fromARGB(255, 5, 5, 5),
+                    //     fontSize: 12,
+                    //   ),
+                    // ),
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: 'Email',
+                        hintText: 'you@email.com',
+                        icon: Icon(Icons.email)
+                      ),
+                    ),
+                    SizedBox(height: 20,),
+                    TextField(
+                      obscureText: true,
+                      decoration: InputDecoration(
+                        labelText: "Password",
+                        icon: Icon(Icons.key),
+                      ),
+                    )
+                  ],
                 ),
               ),
             ),
