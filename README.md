@@ -3,14 +3,28 @@
 A new Flutter project.
 
 ## Getting Started
+# 🎧 Winx Player - Flutter Login UI
 
-This project is a starting point for a Flutter application.
+This is a simple **Flutter Login UI** for a music-themed app called **Winx Player**. It features a clean layout with a background image, input fields, and navigation buttons for login and signup.
 
-A few resources to get you started if this is your first Flutter project:
+## 🖼️ Preview
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> This app is designed with a dark theme and a vibrant green accent for interactive elements like the login button.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Features
+
+- Clean and responsive UI layout
+- Dark-themed background with overlay image
+- Styled input fields for Email and Password
+- Floating Action Button (FAB) with headphone icon
+- Login and Signup button design
+- Ready to connect to authentication logic
+
+## 📁 Project Structure
+
+```bash
+lib/
+├── main.dart         # Main app entry point with login UI
+assets/
+└── images/
+    └── home2.jpg     # Background image used in the login page
