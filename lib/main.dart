@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+// Login Page
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -46,33 +48,44 @@ class MyApp extends StatelessWidget {
                       "Hi, login to enjoy your favorite music",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        color: Color.fromARGB(255, 21, 219, 44),
-                        fontSize: 20,
+                        color: Color.fromARGB(255, 21, 160, 37),
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     SizedBox(height: 20),
-                    // Text(
-                    //   "Enter email and password to continue",
-                    //   style: TextStyle(
-                    //     color: Color.fromARGB(255, 5, 5, 5),
-                    //     fontSize: 12,
-                    //   ),
-                    // ),
                     TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                         labelText: 'Email',
-                        hintText: 'you@email.com',
+                        hintText: 'example@email.com',
                         icon: Icon(Icons.email)
                       ),
                     ),
                     SizedBox(height: 20,),
                     TextField(
+                      style: TextStyle(color: Colors.white),
                       obscureText: true,
                       decoration: InputDecoration(
                         labelText: "Password",
                         icon: Icon(Icons.key),
                       ),
-                    )
+                    ),
+                  SizedBox(height: 20,),
+                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton(onPressed: ()=>{}, style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color.fromARGB(255, 91, 210, 95),
+                      ),child: const Text("login",style: TextStyle(color: Colors.white,),)),
+                      SizedBox(height: 20,),
+                     Text("Don't have an account?", style: TextStyle(color: Colors.white,fontSize: 13),),
+                     SizedBox(height: 20,),
+                     OutlinedButton(onPressed: ()=>{}, style: ElevatedButton.styleFrom(
+                      ),child: const Text("Signup",style: TextStyle(color: Colors.white),)),
+                    ],
+                   )
                   ],
                 ),
               ),
@@ -87,3 +100,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
