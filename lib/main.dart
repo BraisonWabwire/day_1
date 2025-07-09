@@ -88,7 +88,7 @@ class MyApp extends StatelessWidget {
                             ),
                             ),
                           ),
-                      ]
+                            ]
                     ),
                                 
                     TextField(
@@ -108,7 +108,18 @@ class MyApp extends StatelessWidget {
                         backgroundColor: const Color.fromARGB(255, 91, 210, 95),
                       ),child: const Text("login",style: TextStyle(color: Colors.white,),)),
                       SizedBox(height: 20,),
-                     Text("Don't have an account?", style: TextStyle(color: Colors.white,fontSize: 13),),
+                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                       children: [
+                         Text("Remember me?", style: TextStyle(color: Colors.white,fontSize: 13),),
+                         Checkbox(
+                        value: false,
+                        onChanged: (bool? val) {
+                          // Do something here
+                        },
+                      ),
+                       ],
+                     ),
                      SizedBox(height: 20,),
                      OutlinedButton(onPressed: ()=>{}, style: ElevatedButton.styleFrom(
                       ),child: const Text("Signup",style: TextStyle(color: Colors.white),)),
