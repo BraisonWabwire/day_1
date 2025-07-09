@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
 
@@ -62,16 +63,43 @@ class MyApp extends StatelessWidget {
                         icon: Icon(Icons.email)
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    // SizedBox(height: 20,),
+                    TextField(
+                        keyboardType: TextInputType.number,
+                        style: TextStyle(color:Colors.white,),
+                        inputFormatters: [
+                          LengthLimitingTextInputFormatter(10),
+                        ],
+                        decoration: InputDecoration(
+                          labelText: 'phone number',
+                          icon: Icon(Icons.phone)
+                        ),
+                      ),
+                    // SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: TextField(
+                            style: TextStyle(color: Colors.white),
+                            obscureText: true,
+                            decoration: InputDecoration(
+                              labelText: "Password",
+                              icon: Icon(Icons.key),
+                            ),
+                            ),
+                          ),
+                      ]
+                    ),
+                                
                     TextField(
                       style: TextStyle(color: Colors.white),
                       obscureText: true,
                       decoration: InputDecoration(
-                        labelText: "Password",
+                        labelText: "Confirm password",
                         icon: Icon(Icons.key),
                       ),
                     ),
-                  SizedBox(height: 20,),
+                    SizedBox(height: 20,),
                    Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -84,6 +112,7 @@ class MyApp extends StatelessWidget {
                      SizedBox(height: 20,),
                      OutlinedButton(onPressed: ()=>{}, style: ElevatedButton.styleFrom(
                       ),child: const Text("Signup",style: TextStyle(color: Colors.white),)),
+                    
                     ],
                    )
                   ],
